@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Salty Cedars Ocean Adventures offers custom ocean adventures on the west coast. Come fishing, whale watching or charter a custom adventure. Located in Ucluelet, British Columbia"
+    />
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png" />
+    <title>Salty Cedars Guest Suite &amp; Ocean Adventures - Ocean Charters</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/site.css" />
+  </head>
+  <body class="font-lexend-deca">
+    <!-- Navigation Bar with Logo and Mobile Menu -->
+    <nav class="bg-teal-800 text-white">
+      <div class="container mx-auto px-4 flex items-center justify-between py-4">
+        <!-- Logo -->
+        <div class="text-2xl font-bold">
+          <a href="./index.html">
+            <img src="./images/salty-cedars-logo.png" class="w-48" />
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="desktop-menu flex space-x-4">
+          <li><a href="./index.html" class="hover:text-teal-300">Home</a></li>
+          <li>|</li>
+          <li><a href="./suite.html" class="hover:text-teal-300">Suite</a></li>
+          <li>|</li>
+          <li><a href="./adventures.html" class="hover:text-teal-300">Ocean Adventures</a></li>
+          <li>|</li>
+          <li><a href="#contact" class="hover:text-teal-300">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu md:hidden">
+          <button id="menu-toggle" class="text-white hover:text-teal-300">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu-dropdown" class="mobile-menu bg-teal-600 hidden">
+        <ul class="px-2 pt-2 pb-3 space-y-1">
+          <li><a href="./index.html" class="hover:text-teal-300">Home</a></li>
+          <li><a href="./suite.html" class="block px-3 py-2 text-white hover:bg-teal-400">Suite</a></li>
+          <li><a href="./adventures.html" class="block px-3 py-2 text-white hover:bg-teal-400">Ocean Adventures</a></li>
+          <li><a href="#contact" class="block px-3 py-2 text-white hover:bg-teal-400">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative">
+      <img
+        src="./images/adventures/west-coast-fishing-charters-boat.avif"
+        class="block w-full h-[400px] sm:h-[600px] object-cover"
+      />
+      <!-- Overlay and content remain the same -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-5">
+        <h1 class="text-4xl font-bold sm:text-6xl mb-4">Salty Cedars Ocean Adventures</h1>
+        <p class="font-thin text-lg sm:text-xl">Fishing charters, whale watching and custom adventures</p>
+      </div>
+    </header>
+
+    <!-- Charters Section -->
+    <section class="bg-teal-800 py-12 text-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Our Boat</h3>
+            <p class="font-thin">
+              Our custom-welded aluminum Walker Center Console boat feature a robust, all-welded aluminum V-hull, which
+              ensures that even when the seas become rough, our vessel will navigate them safely. The spacious
+              walk-around console design is perfect for activities like halibut drifting, providing ample space to
+              maneuver when the action heats up, especially when you're reeling in that prized tyee spring salmon.
+            </p>
+            <p class="font-thin mt-5">
+              On our boat, there's no need to worry about crowded conditions. The expansive beam and open layout ensure
+              that you can enjoy your fishing or other activities without feeling cramped. Beyond the generous legroom,
+              our boat also offers substantial storage space for any additional gear you might need for your adventures.
+              Whether you're planning a beach camping trip, a remote surfing expedition, fishing outing, or exploring
+              untouched territories, our boat is well-equipped to handle all your needs comfortably.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Booking &amp; Availability</h3>
+            <p class="font-thin">Please get in touch with us to book or dicuss your custom adventure.</p>
+            <p class="font-thin mt-5">
+              Email:
+              <a href="mailto:salty.cedars.ukee@gmail.com" class="hover:text-teal-300 underline"
+                >salty.cedars.ukee@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="bg-white">
+      <div class="w-full">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-1">
+          <img src="./images/adventures/sunset-from-wild-pacific-trail.avif" class="w-full object-cover" />
+          <img src="./images/adventures/fireweed-and-thistles-in-sunset.avif" class="w-full object-cover" />
+          <img src="./images/adventures/kids-flowers-in-sunset.avif" class="w-full object-cover" />
+          <img src="./images/adventures/sunset-from-wild-pacific-trail-2.avif" class="w-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Info -->
+    <footer id="contact" class="bg-teal-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+            <p class="font-thin">Darren &amp; Ashleigh</p>
+            <p class="font-thin">
+              Email:
+              <a href="mailto:salty.cedars.ukee@gmail.com" class="hover:text-teal-300 underline"
+                >salty.cedars.ukee@gmail.com</a
+              >
+            </p>
+            <p class="font-thin">Phone: (250) 266-9191</p>
+            <p class="font-thin">Location: Ucluelet, BC, Canada</p>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold mb-6">Follow Us</h2>
+            <a href="https://instagram.com/salty.cedars" class="inline-flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-6 h-6 fill-white">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.getElementById('mobile-menu-dropdown').classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

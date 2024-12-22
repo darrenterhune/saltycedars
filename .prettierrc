@@ -1,0 +1,33 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "arrowParens": "avoid",
+  "printWidth": 120,
+  "rubyPlugins": "plugin/single_quotes,plugin/trailing_comma",
+  "overrides": [
+    {
+      "files": ["babel.config.js"],
+      "options": {
+        "trailingComma": "es5"
+      }
+    },
+    {
+      "files": ["*.css", "*.scss", "*.less", "*.variables", "*.overrides"],
+      "options": {
+        "singleQuote": false
+      }
+    },
+    {
+      "files": ["*.overrides", "*.variables"],
+      "options": {
+        "parser": "less"
+      }
+    }
+  ]
+}
