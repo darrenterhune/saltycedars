@@ -18,15 +18,9 @@
       }
     },
     {
-      "files": ["*.css", "*.scss", "*.less", "*.variables", "*.overrides"],
+      "files": ["*.css", "*.scss"],
       "options": {
         "singleQuote": false
-      }
-    },
-    {
-      "files": ["*.overrides", "*.variables"],
-      "options": {
-        "parser": "less"
       }
     }
   ]
