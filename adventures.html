@@ -90,21 +90,44 @@
             </p>
           </div>
           <div>
-            <h3 class="text-xl font-semibold mb-2">Booking &amp; Availability</h3>
-            <p class="font-thin mb-4">Please get in touch with us to book or dicuss your custom adventure.</p>
-            <p class="font-thin">
-              Email:
-              <a href="mailto:salty.cedars.ukee@gmail.com" rel="nofollow noopener" class="hover:text-teal-300 underline"
-                >salty.cedars.ukee@gmail.com</a
-              >
-            </p>
-          </div>
-          <div>
             <h3 class="text-xl font-semibold mb-2">Ocean Adventures</h3>
             <p class="font-thin">
               We offer a variety of ocean adventures, including whale watching, bear and wildlife viewing, fishing
               charters, surf charters, and other custom adventures. Want to do something different? Off the beaten path?
               Let us arrange and charter a camping trip on a remote island or beach.
+            </p>
+            <h3 class="text-xl font-semibold mt-4 mb-4">Booking &amp; Availability</h3>
+            <p class="font-thin mb-2">
+              Please get in touch with us if you have a custom adventure. Otherwise you can book a trip online below.
+            </p>
+            <button
+              id="openModal"
+              class="my-4 rounded-lg bg-gray-800 px-6 py-3 font-semibold text-white hover:text-gray-800 hover:bg-gray-200"
+            >
+              Book Online
+            </button>
+            <div
+              id="modal"
+              class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300"
+            >
+              <div
+                class="relative w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 max-h-[90vh] bg-white rounded-2xl shadow-2xl p-8 overflow-y-auto transform scale-90 transition-transform duration-300"
+              >
+                <button
+                  id="closeModal"
+                  class="absolute top-4 right-4 text-3xl leading-none text-slate-500 hover:text-slate-900"
+                >
+                  &times;
+                </button>
+                <h2 class="mb-4 text-2xl font-bold">Book your adventure!</h2>
+                <script src="https://square.site/appointments/buyer/widget/td4s95vadb63fl/LBEKVFX8A61KZ.js"></script>
+              </div>
+            </div>
+            <p class="font-thin">
+              Email:
+              <a href="mailto:salty.cedars.ukee@gmail.com" rel="nofollow noopener" class="hover:text-teal-300 underline"
+                >salty.cedars.ukee@gmail.com</a
+              >
             </p>
           </div>
         </div>
@@ -126,22 +149,16 @@
                     Half Day (4hrs)
                   </th>
                   <th scope="col" class="py-3 text-left text-xs font-medium uppercase tracking-wider">
-                    Full Day (8hrs)
+                    Full Day (10hrs)
                   </th>
                 </tr>
               </thead>
               <tbody class="bg-white divide-y divide-gray-200">
                 <tr>
-                  <td class="py-4 whitespace-nowrap text-sm text-gray-500">1-2 People</td>
+                  <td class="py-4 whitespace-nowrap text-sm text-gray-500">1-4 People</td>
                   <td class="py-4 whitespace-nowrap text-sm text-gray-500">$200</td>
                   <td class="py-4 whitespace-nowrap text-sm text-gray-500">$800</td>
                   <td class="py-4 whitespace-nowrap text-sm text-gray-500">$1600</td>
-                </tr>
-                <tr>
-                  <td class="py-4 whitespace-nowrap text-sm text-gray-500">3-4 People</td>
-                  <td class="py-4 whitespace-nowrap text-sm text-gray-500">+$20/hr per person</td>
-                  <td class="py-4 whitespace-nowrap text-sm text-gray-500"></td>
-                  <td class="py-4 whitespace-nowrap text-sm text-gray-500"></td>
                 </tr>
               </tbody>
             </table>
@@ -152,14 +169,9 @@
           </p>
           <ul class="text-sm mt-4 list-disc pl-5">
             <li>Rates are in CAD and are subject to 5% gst</li>
-            <li>20% deposit required at time of booking. Remainder to be paid in full the day before trip date.</li>
             <li>Refunds and date changes allowed up to 7 days prior to trip date.</li>
             <li>Captain cancelations due to weather or unfavorable sea conditions are fully refundable.</li>
-            <li>
-              Cancelations are subject to a 5% fee, except for captain cancellations due to weather or sea conditions,
-              which are fully refundable.
-            </li>
-            <li>Cash payments receive 15% discount.</li>
+            <li>Cash payments receive 15% discount. Contact us for more info.</li>
           </ul>
           <p class="text-sm mt-4">
             Residents can buy their
@@ -258,17 +270,24 @@
     </section>
     <footer id="contact" class="bg-teal-800 text-white py-12">
       <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div>
             <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
             <p class="font-thin">Darren &amp; Ashleigh</p>
             <p class="font-thin">
               Email:
-              <a href="mailto:salty.cedars.ukee@gmail.com" rel="nofollow noopener" class="hover:text-teal-300 underline"
+              <a href="mailto:salty.cedars.ukee@gmail.com" class="hover:text-teal-300 underline"
                 >salty.cedars.ukee@gmail.com</a
               >
             </p>
             <p class="font-thin">Location: Ucluelet, BC, Canada</p>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold mb-6">Legal</h2>
+            <ul class="list-none">
+              <li><a href="./privacy-policy.html" class="hover:text-teal-300 underline">Privacy Policy</a></li>
+              <li><a href="./terms-of-service.html" class="hover:text-teal-300 underline">Terms of Service</a></li>
+            </ul>
           </div>
           <div>
             <h2 class="text-3xl font-bold mb-6">Follow Us</h2>
@@ -303,6 +322,31 @@
     <script>
       document.getElementById('menu-toggle').addEventListener('click', function () {
         document.getElementById('mobile-menu-dropdown').classList.toggle('hidden');
+      });
+      const modal = document.getElementById('modal');
+      const modalBox = modal.firstElementChild;
+      const openBtn = document.getElementById('openModal');
+      const closeBtn = document.getElementById('closeModal');
+
+      function openModal() {
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        void modal.offsetWidth;
+        modalBox.classList.remove('scale-90');
+      }
+
+      function closeModal() {
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        modalBox.classList.add('scale-90');
+      }
+
+      openBtn.addEventListener('click', openModal);
+      closeBtn.addEventListener('click', closeModal);
+
+      modal.addEventListener('click', e => {
+        if (e.target === modal) closeModal();
+      });
+      window.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeModal();
       });
     </script>
   </body>
