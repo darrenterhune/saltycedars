@@ -34,7 +34,7 @@
             <img src="./images/salty-cedars-logo.png" class="w-48" />
           </a>
         </div>
-        <ul class="desktop-menu flex space-x-4">
+        <ul class="desktop-menu flex items-center space-x-4">
           <li><a href="./" class="hover:text-teal-300">Home</a></li>
           <li>|</li>
           <li><a href="./suite.html" class="hover:text-teal-300">Suite</a></li>
@@ -42,6 +42,10 @@
           <li><a href="./adventures.html" class="hover:text-teal-300">Ocean Adventures</a></li>
           <li>|</li>
           <li><a href="#contact" class="hover:text-teal-300">Contact</a></li>
+          <li>|</li>
+          <li>
+            <button class="book-now-btn hover:text-teal-300">Book Now</button>
+          </li>
         </ul>
         <div class="mobile-menu md:hidden">
           <button id="menu-toggle" class="text-white hover:text-teal-300">
@@ -74,9 +78,14 @@
       <div class="absolute inset-0 bg-black opacity-50"></div>
       <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-5">
         <h1 class="text-4xl font-bold sm:text-6xl mb-4">Salty Cedars Ocean Adventures</h1>
-        <p class="font-thin text-lg sm:text-xl">
+        <p class="font-thin text-lg sm:text-xl mb-4">
           Custom ocean adventures, whale watching and fishing charters on the west coast of Vancouver Island
         </p>
+        <button
+          class="book-now-btn rounded-lg bg-teal-600 px-6 py-3 font-semibold text-white hover:text-gray-800 hover:bg-gray-200"
+        >
+          Book Online
+        </button>
       </div>
     </header>
     <section class="bg-teal-800 py-12 text-white">
@@ -110,8 +119,7 @@
               Please get in touch with us if you have a custom adventure. Otherwise you can book a trip online below.
             </p>
             <button
-              id="openModal"
-              class="my-4 rounded-lg bg-gray-800 px-6 py-3 font-semibold text-white hover:text-gray-800 hover:bg-gray-200"
+              class="book-now-btn my-4 rounded-lg bg-gray-800 px-6 py-3 font-semibold text-white hover:text-gray-800 hover:bg-gray-200"
             >
               Book Online
             </button>
@@ -212,13 +220,18 @@
             <strong>*NOTE: </strong>If you have a custom adventure or are looking for longer trips, please get in touch
             with us as rates can change.
           </p>
-          <ul class="text-sm mt-4 list-disc pl-5">
+          <ul class="text-sm mt-4 list-disc pl-5 mb-4">
             <li>Rates are in CAD and are subject to 5% gst</li>
             <li>Refunds and date changes allowed up to 7 days prior to trip date.</li>
             <li>If cancelling or rescheduling less than 7 days prior to trip date, a 20% fee may be applied.</li>
             <li>Captain cancelations due to weather or unfavorable sea conditions are fully refundable.</li>
             <li>Cash payments receive 15% discount. Contact us for more info.</li>
           </ul>
+          <button
+            class="book-now-btn w-fit rounded-lg bg-teal-600 px-6 py-3 mb-4 font-semibold text-white hover:text-gray-800 hover:bg-gray-200"
+          >
+            Book Online
+          </button>
           <p class="text-sm mt-4">
             Residents can buy their
             <a
@@ -369,9 +382,10 @@
       document.getElementById('menu-toggle').addEventListener('click', function () {
         document.getElementById('mobile-menu-dropdown').classList.toggle('hidden');
       });
+
       const modal = document.getElementById('modal');
       const modalBox = modal.firstElementChild;
-      const openBtn = document.getElementById('openModal');
+      const openBtns = document.querySelectorAll('.book-now-btn');
       const closeBtn = document.getElementById('closeModal');
 
       function openModal() {
@@ -385,7 +399,9 @@
         modalBox.classList.add('scale-90');
       }
 
-      openBtn.addEventListener('click', openModal);
+      openBtns.forEach(btn => {
+        btn.addEventListener('click', openModal);
+      });
       closeBtn.addEventListener('click', closeModal);
 
       modal.addEventListener('click', e => {
